@@ -1,0 +1,11 @@
+﻿<Properties StartupItem="SmoothProgressBar\SmoothProgressBar.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Lollipop)" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>PhotoViewBindings\PhotoViewBindings.csproj</String>
+  </DisabledProjects>
+</Properties>

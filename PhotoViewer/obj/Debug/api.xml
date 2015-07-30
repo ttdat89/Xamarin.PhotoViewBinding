@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="uk.co.senab.photoview">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="uk.co.senab.photoview.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;uk.co.senab.photoview&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="122" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Compat" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Compat" static="false" type="uk.co.senab.photoview.Compat" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPointerIndex" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="postOnAnimation" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DefaultOnDoubleTapListener" static="false" visibility="public">
+<implements name="android.view.GestureDetector.OnDoubleTapListener" name-generic-aware="android.view.GestureDetector.OnDoubleTapListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultOnDoubleTapListener" static="false" type="uk.co.senab.photoview.DefaultOnDoubleTapListener" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTap" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDoubleTapEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSingleTapConfirmed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPhotoViewAttacher" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IPhotoView" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="canZoom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDisplayMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDisplayRect" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIPhotoViewImplementation" native="false" return="uk.co.senab.photoview.IPhotoView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="getMaxScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMaximumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMediumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="getMidScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="getMinScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMinimumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOnPhotoTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOnViewTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getScaleType" native="false" return="android.widget.ImageView.ScaleType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVisibleRectangleBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAllowParentInterceptOnEdge" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDisplayMatrix" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setMaxScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMaximumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMediumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setMidScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setMinScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMinimumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnDoubleTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.GestureDetector.OnDoubleTapListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnLongClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View.OnLongClickListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnMatrixChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnMatrixChangedListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnPhotoTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnScaleChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnScaleChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnViewTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPhotoViewRotation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setRotationBy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setRotationTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScaleLevels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScaleType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.ImageView.ScaleType">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setZoomTransitionDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setZoomable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_MAX_SCALE" static="true" transient="false" type="float" type-generic-aware="float" value="3.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_MID_SCALE" static="true" transient="false" type="float" type-generic-aware="float" value="1.750000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_MIN_SCALE" static="true" transient="false" type="float" type-generic-aware="float" value="1.000000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_ZOOM_DURATION" static="true" transient="false" type="int" type-generic-aware="int" value="200" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.ImageView" extends-generic-aware="android.widget.ImageView" final="false" name="PhotoView" static="false" visibility="public">
+<implements name="uk.co.senab.photoview.IPhotoView" name-generic-aware="uk.co.senab.photoview.IPhotoView">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PhotoView" static="false" type="uk.co.senab.photoview.PhotoView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PhotoView" static="false" type="uk.co.senab.photoview.PhotoView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PhotoView" static="false" type="uk.co.senab.photoview.PhotoView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="canZoom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayRect" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIPhotoViewImplementation" native="false" return="uk.co.senab.photoview.IPhotoView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMaxScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMidScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMinScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinimumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnPhotoTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnViewTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVisibleRectangleBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllowParentInterceptOnEdge" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplayMatrix" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMaxScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaximumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMediumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMidScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMinScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMinimumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnDoubleTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.GestureDetector.OnDoubleTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnMatrixChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnMatrixChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPhotoTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnScaleChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnScaleChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnViewTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPhotoViewRotation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotationBy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotationTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScaleLevels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoomTransitionDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoomable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PhotoViewAttacher" static="false" visibility="public">
+<implements name="android.view.View.OnTouchListener" name-generic-aware="android.view.View.OnTouchListener">
+</implements>
+<implements name="android.view.ViewTreeObserver.OnGlobalLayoutListener" name-generic-aware="android.view.ViewTreeObserver.OnGlobalLayoutListener">
+</implements>
+<implements name="uk.co.senab.photoview.IPhotoView" name-generic-aware="uk.co.senab.photoview.IPhotoView">
+</implements>
+<implements name="uk.co.senab.photoview.gestures.OnGestureListener" name-generic-aware="uk.co.senab.photoview.gestures.OnGestureListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PhotoViewAttacher" static="false" type="uk.co.senab.photoview.PhotoViewAttacher" visibility="public">
+<parameter name="p0" type="android.widget.ImageView">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PhotoViewAttacher" static="false" type="uk.co.senab.photoview.PhotoViewAttacher" visibility="public">
+<parameter name="p0" type="android.widget.ImageView">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="canZoom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cleanup" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayRect" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIPhotoViewImplementation" native="false" return="uk.co.senab.photoview.IPhotoView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImageView" native="false" return="android.widget.ImageView" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMaxScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMidScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMinScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinimumScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnPhotoTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnViewTapListener" native="false" return="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScale" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScaleType" native="false" return="android.widget.ImageView.ScaleType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVisibleRectangleBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onGlobalLayout" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllowParentInterceptOnEdge" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplayMatrix" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.Matrix">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMaxScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaximumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMediumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMidScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setMinScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMinimumScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnDoubleTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.GestureDetector.OnDoubleTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnLongClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View.OnLongClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnMatrixChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnMatrixChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPhotoTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnPhotoTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnScaleChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnScaleChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnViewTapListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.PhotoViewAttacher.OnViewTapListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPhotoViewRotation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotationBy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotationTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScaleLevels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScaleType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.widget.ImageView.ScaleType">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoomTransitionDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoomable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.GestureDetector.SimpleOnGestureListener" extends-generic-aware="android.view.GestureDetector.SimpleOnGestureListener" final="false" name="PhotoViewAttacher.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PhotoViewAttacher.2" static="true" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PhotoViewAttacher.AnimatedZoomRunnable" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PhotoViewAttacher.AnimatedZoomRunnable" static="false" type="uk.co.senab.photoview.PhotoViewAttacher.AnimatedZoomRunnable" visibility="public">
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+<parameter name="p4" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="PhotoViewAttacher.FlingRunnable" static="false" visibility="">
+<implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PhotoViewAttacher.FlingRunnable" static="false" type="uk.co.senab.photoview.PhotoViewAttacher.FlingRunnable" visibility="public">
+<parameter name="p1" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelFling" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PhotoViewAttacher.OnMatrixChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMatrixChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.RectF">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PhotoViewAttacher.OnPhotoTapListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPhotoTap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PhotoViewAttacher.OnScaleChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onScaleChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PhotoViewAttacher.OnViewTapListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onViewTap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.View">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+</interface>
+</package>
+<package name="uk.co.senab.photoview.gestures">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="CupcakeGestureDetector" static="false" visibility="public">
+<implements name="uk.co.senab.photoview.gestures.GestureDetector" name-generic-aware="uk.co.senab.photoview.gestures.GestureDetector">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CupcakeGestureDetector" static="false" type="uk.co.senab.photoview.gestures.CupcakeGestureDetector" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDragging" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isScaling" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnGestureListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.gestures.OnGestureListener">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="mListener" static="false" transient="false" type="uk.co.senab.photoview.gestures.OnGestureListener" type-generic-aware="uk.co.senab.photoview.gestures.OnGestureListener" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="uk.co.senab.photoview.gestures.CupcakeGestureDetector" extends-generic-aware="uk.co.senab.photoview.gestures.CupcakeGestureDetector" final="false" name="EclairGestureDetector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EclairGestureDetector" static="false" type="uk.co.senab.photoview.gestures.EclairGestureDetector" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="uk.co.senab.photoview.gestures.EclairGestureDetector" extends-generic-aware="uk.co.senab.photoview.gestures.EclairGestureDetector" final="false" name="FroyoGestureDetector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FroyoGestureDetector" static="false" type="uk.co.senab.photoview.gestures.FroyoGestureDetector" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="mDetector" static="false" transient="false" type="android.view.ScaleGestureDetector" type-generic-aware="android.view.ScaleGestureDetector" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FroyoGestureDetector.1" static="false" visibility="">
+<implements name="android.view.ScaleGestureDetector.OnScaleGestureListener" name-generic-aware="android.view.ScaleGestureDetector.OnScaleGestureListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScale" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScaleBegin" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onScaleEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.ScaleGestureDetector">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GestureDetector" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="isDragging" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isScaling" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnGestureListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.gestures.OnGestureListener">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="OnGestureListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onDrag" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onFling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+<parameter name="p3" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+<parameter name="p2" type="float">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="VersionedGestureDetector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VersionedGestureDetector" static="false" type="uk.co.senab.photoview.gestures.VersionedGestureDetector" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="uk.co.senab.photoview.gestures.GestureDetector" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="uk.co.senab.photoview.gestures.OnGestureListener">
+</parameter>
+</method>
+</class>
+</package>
+<package name="uk.co.senab.photoview.log">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="LogManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LogManager" static="false" type="uk.co.senab.photoview.log.LogManager" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLogger" native="false" return="uk.co.senab.photoview.log.Logger" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLogger" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="uk.co.senab.photoview.log.Logger">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Logger" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="LoggerDefault" static="false" visibility="public">
+<implements name="uk.co.senab.photoview.log.Logger" name-generic-aware="uk.co.senab.photoview.log.Logger">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LoggerDefault" static="false" type="uk.co.senab.photoview.log.LoggerDefault" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+</class>
+</package>
+<package name="uk.co.senab.photoview.scrollerproxy">
+<class abstract="false" deprecated="not deprecated" extends="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" extends-generic-aware="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" final="false" name="GingerScroller" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GingerScroller" static="false" type="uk.co.senab.photoview.scrollerproxy.GingerScroller" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeScrollOffset" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+<parameter name="p8" type="int">
+</parameter>
+<parameter name="p9" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="forceFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="mScroller" static="false" transient="false" type="android.widget.OverScroller" type-generic-aware="android.widget.OverScroller" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="uk.co.senab.photoview.scrollerproxy.GingerScroller" extends-generic-aware="uk.co.senab.photoview.scrollerproxy.GingerScroller" final="false" name="IcsScroller" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IcsScroller" static="false" type="uk.co.senab.photoview.scrollerproxy.IcsScroller" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" extends-generic-aware="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" final="false" name="PreGingerScroller" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PreGingerScroller" static="false" type="uk.co.senab.photoview.scrollerproxy.PreGingerScroller" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeScrollOffset" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+<parameter name="p8" type="int">
+</parameter>
+<parameter name="p9" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="forceFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="ScrollerProxy" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ScrollerProxy" static="false" type="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="computeScrollOffset" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+<parameter name="p5" type="int">
+</parameter>
+<parameter name="p6" type="int">
+</parameter>
+<parameter name="p7" type="int">
+</parameter>
+<parameter name="p8" type="int">
+</parameter>
+<parameter name="p9" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="forceFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCurrX" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCurrY" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScroller" native="false" return="uk.co.senab.photoview.scrollerproxy.ScrollerProxy" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isFinished" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package>
+</api>

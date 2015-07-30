@@ -1,0 +1,9 @@
+D:\Dat Tran\Workspace\onemanga-droid\Libs\Android\Bindings\PhotoViewer\bin\Debug\PhotoViewer.dll
+D:\Dat Tran\Workspace\onemanga-droid\Libs\Android\Bindings\PhotoViewer\bin\Debug\PhotoViewer.pdb
+D:\Dat Tran\Workspace\onemanga-droid\Libs\Android\Bindings\PhotoViewer\obj\Debug\PhotoViewer.dll
+D:\Dat Tran\Workspace\onemanga-droid\Libs\Android\Bindings\PhotoViewer\obj\Debug\PhotoViewer.pdb
+D:\Dat Tran\Workspace\Xamarin.PhotoViewBinding\PhotoViewer\bin\Debug\PhotoViewer.dll
+D:\Dat Tran\Workspace\Xamarin.PhotoViewBinding\PhotoViewer\bin\Debug\PhotoViewer.pdb
+D:\Dat Tran\Workspace\Xamarin.PhotoViewBinding\PhotoViewer\obj\Debug\PhotoViewer.csprojResolveAssemblyReference.cache
+D:\Dat Tran\Workspace\Xamarin.PhotoViewBinding\PhotoViewer\obj\Debug\PhotoViewer.dll
+D:\Dat Tran\Workspace\Xamarin.PhotoViewBinding\PhotoViewer\obj\Debug\PhotoViewer.pdb
